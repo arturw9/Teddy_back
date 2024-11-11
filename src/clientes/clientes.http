@@ -1,0 +1,27 @@
+### list developers
+GET http://localhost:3000/clientes
+
+### get developer
+GET http://localhost:3000/clientes/5
+
+### create developer
+POST http://localhost:3000/clientes
+Content-Type: application/json
+
+{
+    "name": "Artur",
+    "salary": 450.01,
+    "valorEmpresa": 50000
+}
+
+### Update developer
+PATCH http://localhost:3000/clientes/5
+Content-Type: application/json
+
+{   
+   "name": "Maria",
+    "email": "mariaw9@hotmail.com",
+    "dateOfBirth": "1963-01-01"
+}
+### Delete developer
+DELETE  http://localhost:3000/clientes/5
